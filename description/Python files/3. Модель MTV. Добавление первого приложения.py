@@ -35,21 +35,21 @@ Model (Модель)
 """
 
 "Пример модели"
-from django.db import models
-
-
-class Article(models.Model):
-    """
-    Article — это модель, которая представляет статью.
-    Поля title, content и published_date соответствуют колонкам в таблице базы данных.
-    Метод __str__ определяет, как объект будет отображаться в админке Django.
-    """
-    title = models.CharField(max_length=100)
-    content = models.TextField()
-    published_date = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.title
+# from django.db import models
+#
+#
+# class Article(models.Model):
+#     """
+#     Article — это модель, которая представляет статью.
+#     Поля title, content и published_date соответствуют колонкам в таблице базы данных.
+#     Метод __str__ определяет, как объект будет отображаться в админке Django.
+#     """
+#     title = models.CharField(max_length=100)
+#     content = models.TextField()
+#     published_date = models.DateTimeField(auto_now_add=True)
+#
+#     def __str__(self):
+#         return self.title
 
 
 """
@@ -93,9 +93,9 @@ Template.
 get_object_or_404 получает объект Article из базы данных или возвращает ошибку 404, если объект не найден.
 render объединяет шаблон article_detail.html с данными и возвращает HTML-страницу:"""
 
-from django.shortcuts import render, get_object_or_404
-
-
-def article_detail(request, article_id):
-    article = get_object_or_404(Article, id=article_id)
-    return render(request, 'article_detail.html', {'article': article})
+# from django.shortcuts import render, get_object_or_404
+#
+#
+# def article_detail(request, article_id):
+#     article = get_object_or_404(Article, id=article_id)
+#     return render(request, 'article_detail.html', {'article': article})

@@ -14,8 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import handler404
 from django.contrib import admin
 from django.urls import path, include
+from woman.views import page_not_found
 
 from woman import views
 
@@ -25,3 +27,5 @@ urlpatterns = [
 ]
 
 """Параметр woman/ определяет суффикс URL-адреса, т.е. это часть URL, которая добавляется после доменного имени"""
+
+handler404 = page_not_found
