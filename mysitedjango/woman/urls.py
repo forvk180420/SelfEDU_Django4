@@ -12,6 +12,7 @@ register_converter(converters.FourDigitYearConverter, 'year4')
 urlpatterns = [
     path('', views.index, name='home'),  # http://127.0.0.1:8000/
     path('woman/', views.index, name='woman'),  # http://127.0.0.1:8000/woman/
+    path('about/', views.about, name='about'),
     path('cats/<int:cat_id>/', views.categories, name='cat_id'),  # http://127.0.0.1:8000/cats/
     path('cats/<slug:cat_slug>/', views.categories_by_slug, name='cat_slug'),
     # http://127.0.0.1:8000/cats/my-first-post
