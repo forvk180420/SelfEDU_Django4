@@ -12,8 +12,28 @@ def index(request):
     # # нужный заголовок ответа
     return render(request, 'woman/index.html')
 
+
 def about(request):
-    return render(request, 'woman/about.html')
+    data = {'title': 'О сайте (из словаря)'}
+    return render(request, 'woman/about.html', data)
+
+
+def send_dif_type(request):
+    class MyClass:
+        def __init__(self, a, b):
+            self.a = a
+            self.b = b
+
+    data = {
+        'title': 'Передача данных разного типа',
+        'menu': ['О сайте', 'Добавить статью', 'Обратная связь', 'Войти'],
+        'lst': [1, 2, 'abc', True],
+        'set': {1, 2, 3},
+        'dict': {'key_1': 'value_1', 'key_2': 'value_2'},
+        'obj': MyClass(10, 20)
+    }
+    return render(request, 'woman/send_dif_type.html', context=data)
+
 
 def categories(request, cat_id):
     return HttpResponse(f"<h1>Статьи по категориям</h1><p>id:{cat_id}</p>")

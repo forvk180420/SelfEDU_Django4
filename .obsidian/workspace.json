@@ -14,14 +14,29 @@
               "type": "markdown",
               "state": {
                 "file": "description/md/9. Шаблоны, начало. Функции render() и render to string().md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "9. Шаблоны, начало. Функции render() и render to string()"
             }
+          },
+          {
+            "id": "00a7b545530594e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "description/md/10. Передача данных (переменных) в шаблоны.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "10. Передача данных (переменных) в шаблоны"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "83fc71a7af6546a6",
@@ -169,20 +183,25 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "4f46a544f4a88dd5",
+  "active": "00a7b545530594e2",
   "lastOpenFiles": [
-    "mysitedjango/woman/templates/woman/about.html~",
-    "mysitedjango/woman/templates/woman/about.html",
+    "description/md/attachments/Pasted image 20250324110647.png",
+    "mysitedjango/woman/templates/woman/send_dif_type.html~",
+    "description/md/attachments/Pasted image 20250324105156.png",
+    "description/md/attachments",
+    "Pasted image 20250324104549.png",
+    "Pasted image 20250324104515.png",
+    "description/md/9. Шаблоны, начало. Функции render() и render to string().md",
+    "description/md/10. Передача данных (переменных) в шаблоны.md",
+    "mysitedjango/woman/views.py~",
+    "mysitedjango/woman/templates/woman/send_dif_type.html",
     "mysitedjango/woman/urls.py~",
+    "mysitedjango/woman/templates/woman/about.html~",
+    "description/md/8. Перенаправления (redirect). Функция reverse.md",
+    "mysitedjango/woman/templates/woman/about.html",
     "mysitedjango/woman/templates/woman/index.html",
     "mysitedjango/woman/templates/woman",
     "mysitedjango/woman/templates/index.html~",
-    "mysitedjango/woman/templates/index.html",
-    "mysitedjango/woman/templates",
-    "mysitedjango/woman/views.py~",
-    "description/md/8. Перенаправления (redirect). Функция reverse.md",
-    "description/md/9. Шаблоны, начало. Функции render() и render to string().md",
-    "description/md/7. GET- и POST-запросы. Обработчики исключений запросов.md",
-    "description/Python files/3. Модель MTV. Добавление первого приложения.py~"
+    "description/md/7. GET- и POST-запросы. Обработчики исключений запросов.md"
   ]
 }
