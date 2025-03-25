@@ -2,6 +2,7 @@ from django.http import HttpResponse, HttpResponseNotFound, Http404, HttpRespons
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.template.loader import render_to_string
+from django.template.defaultfilters import slugify
 
 
 def index(request):
@@ -27,6 +28,7 @@ def send_dif_type(request):
     data = {
         'title': 'Передача данных разного типа',
         'menu': ['О сайте', 'Добавить статью', 'Обратная связь', 'Войти'],
+        'float': 28.56,
         'lst': [1, 2, 'abc', True],
         'set': {1, 2, 3},
         'dict': {'key_1': 'value_1', 'key_2': 'value_2'},
