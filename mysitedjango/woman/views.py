@@ -37,6 +37,16 @@ def send_dif_type(request):
     return render(request, 'woman/send_dif_type.html', context=data)
 
 
+def get_data_db(request):
+    data_db = [
+        {'id': 1, 'title': 'Анна', 'content': 'Биография Анны', 'is_published': True},
+        {'id': 2, 'title': 'Мария', 'content': 'Биография Марии', 'is_published': False},
+        {'id': 3, 'title': 'Диана', 'content': 'Биография Дианы', 'is_published': True}
+    ]
+    data = {'posts': data_db}
+    return render(request, 'woman/data_db.html', context=data)
+
+
 def categories(request, cat_id):
     return HttpResponse(f"<h1>Статьи по категориям</h1><p>id:{cat_id}</p>")
 

@@ -18,5 +18,6 @@ urlpatterns = [
     # http://127.0.0.1:8000/cats/my-first-post
     re_path(r"^archive/(?P<year>[0-9]{4})/", views.archive, name='archive'),  # регулярное выражение архив+год
     path("archive2/<year4:year>/", views.archive2, name='archive2'),  # регулярное выражение архив2+год
-    path('send-dif-type/', views.send_dif_type, name='send_dif_type')
+    path('send-dif-type/', views.send_dif_type, name='send_dif_type'),
+    path('data-db/', views.get_data_db, name='get_data_db')
 ]
