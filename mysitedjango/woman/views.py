@@ -4,6 +4,11 @@ from django.urls import reverse
 from django.template.loader import render_to_string
 from django.template.defaultfilters import slugify
 
+menu = [{'title': 'О сайте', 'url_name': 'about'},
+        {'title': 'Добавить статью', 'url_name': 'add_page'},
+        {'title': 'Обратная связь', 'url_name': 'contact'},
+        {'title': 'Войти', 'url_name': 'login'}]
+
 
 def index(request):
     """request - это ссылка на спецкласс, содержащий информацию о запросе: о сессиях, куках и т.д.
@@ -11,12 +16,24 @@ def index(request):
     # t = render_to_string('woman/index.html')
     # return HttpResponse(t)  # класс HttpResponse автоматически формирует
     # # нужный заголовок ответа
-    return render(request, 'woman/index.html')
+    return render(request, 'woman/index.html', {'menu':menu})
 
 
 def about(request):
     data = {'title': 'О сайте (из словаря)'}
     return render(request, 'woman/about.html', data)
+
+
+def addpage(request):
+    return HttpResponse('Добавление статьи')
+
+
+def contact(request):
+    return HttpResponse('Обратная связь')
+
+
+def login(request):
+    return HttpResponse('Авторизация')
 
 
 def send_dif_type(request):
@@ -53,6 +70,10 @@ def categories(request, cat_id):
 
 def categories_by_slug(request, cat_slug):
     return HttpResponse(f"<h1>Статьи по категориям slug</h1><p>slug:{cat_slug}</p>")
+
+
+def show_post(request, post_id):
+    return HttpResponse(f"<h1>Пост с id: {post_id}</h1>")
 
 
 def archive(request, year):

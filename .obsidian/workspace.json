@@ -13,32 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "description/md/12. Теги шаблонов. Теги if и for.md",
+                "file": "description/md/13. Шаблонный тег url.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "12. Теги шаблонов. Теги if и for"
+              "title": "13. Шаблонный тег url"
             }
           }
         ]
       },
       {
-        "id": "a349d1f40d81b28b",
+        "id": "bdf4daa478422b6f",
         "type": "tabs",
         "children": [
           {
-            "id": "a1ae5f9aa19efc26",
+            "id": "0eaa833df012bc4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "description/md/10. Передача данных (переменных) в шаблоны.md",
+                "file": "description/md/12. Теги шаблонов. Теги if и for.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10. Передача данных (переменных) в шаблоны"
+              "title": "12. Теги шаблонов. Теги if и for"
             }
           }
         ]
@@ -190,17 +190,23 @@
   },
   "active": "5f41d2024cf8b1bf",
   "lastOpenFiles": [
-    "description/md/attachments/Pasted image 20250328151119.png",
-    "description/md/10. Передача данных (переменных) в шаблоны.md",
+    "description/md/attachments/Pasted image 20250329111758.png",
+    "description/md/attachments/Pasted image 20250329111654.png",
     "description/md/12. Теги шаблонов. Теги if и for.md",
+    "description/md/13. Шаблонный тег url.md",
+    "description/md/10. Передача данных (переменных) в шаблоны.md",
+    "description/md/11. Стандартные шаблонные фильтры.md",
+    "mysitedjango/woman/templates/woman/index.html~",
+    "mysitedjango/woman/views.py~",
+    "description/md/8. Перенаправления (redirect). Функция reverse.md",
+    "description/md/attachments/Pasted image 20250329100146.png",
+    "description/md/attachments/Pasted image 20250329100034.png",
+    "mysitedjango/woman/templates/woman/data_db.html~",
+    "description/md/attachments/Pasted image 20250328151119.png",
     "description/md/attachments/Pasted image 20250328125401.png",
     "description/md/7. GET- и POST-запросы. Обработчики исключений запросов.md",
     "description/md/9. Шаблоны, начало. Функции render() и render to string().md",
-    "mysitedjango/woman/templates/woman/data_db.html~",
-    "description/md/8. Перенаправления (redirect). Функция reverse.md",
-    "mysitedjango/woman/views.py~",
     "mysitedjango/woman/templates/woman/data_db.html",
-    "description/md/11. Стандартные шаблонные фильтры.md",
     "mysitedjango/woman/templates/woman/g_data_db.html",
     "mysitedjango/woman/urls.py~",
     "description/md/attachments/Pasted image 20250325211340.png",
@@ -211,9 +217,7 @@
     "description/md/attachments/Pasted image 20250324105156.png",
     "description/md/attachments",
     "Pasted image 20250324104549.png",
-    "Pasted image 20250324104515.png",
     "mysitedjango/woman/templates/woman/send_dif_type.html",
-    "mysitedjango/woman/templates/woman/about.html~",
-    "mysitedjango/woman/templates/woman/about.html"
+    "mysitedjango/woman/templates/woman/about.html~"
   ]
 }
