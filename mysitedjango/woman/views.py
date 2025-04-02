@@ -9,6 +9,12 @@ menu = [{'title': 'О сайте', 'url_name': 'about'},
         {'title': 'Обратная связь', 'url_name': 'contact'},
         {'title': 'Войти', 'url_name': 'login'}]
 
+data_db = [
+    {'id': 1, 'title': 'Анна', 'content': 'Биография Анны', 'is_published': True},
+    {'id': 2, 'title': 'Мария', 'content': 'Биография Марии', 'is_published': False},
+    {'id': 3, 'title': 'Диана', 'content': 'Биография Дианы', 'is_published': True}
+]
+
 
 def index(request):
     """request - это ссылка на спецкласс, содержащий информацию о запросе: о сессиях, куках и т.д.
@@ -16,11 +22,11 @@ def index(request):
     # t = render_to_string('woman/index.html')
     # return HttpResponse(t)  # класс HttpResponse автоматически формирует
     # # нужный заголовок ответа
-    return render(request, 'woman/index.html', {'menu':menu})
+    return render(request, 'woman/index.html', {'menu': menu, 'posts': data_db})
 
 
 def about(request):
-    data = {'title': 'О сайте (из словаря)'}
+    data = {'title': 'О сайте (из словаря)', 'menu': menu}
     return render(request, 'woman/about.html', data)
 
 
@@ -55,11 +61,6 @@ def send_dif_type(request):
 
 
 def get_data_db(request):
-    data_db = [
-        {'id': 1, 'title': 'Анна', 'content': 'Биография Анны', 'is_published': True},
-        {'id': 2, 'title': 'Мария', 'content': 'Биография Марии', 'is_published': False},
-        {'id': 3, 'title': 'Диана', 'content': 'Биография Дианы', 'is_published': True}
-    ]
     data = {'posts': data_db}
     return render(request, 'woman/data_db.html', context=data)
 
