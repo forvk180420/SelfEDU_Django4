@@ -30,7 +30,7 @@ def index(request):
     # t = render_to_string('woman/index.html')
     # return HttpResponse(t)  # класс HttpResponse автоматически формирует
     # # нужный заголовок ответа
-    return render(request, 'woman/index.html', {'menu': menu, 'posts': data_db})
+    return render(request, 'woman/index.html', {'menu': menu, 'posts': data_db, 'cat_selected': 0})
 
 
 def about(request):
@@ -69,7 +69,7 @@ def send_dif_type(request):
 
 
 def get_data_db(request):
-    data = {'posts': data_db}
+    data = {'': data_db}
     return render(request, 'woman/data_db.html', context=data)
 
 
@@ -116,6 +116,10 @@ def archive2(request, year):
     if request.GET:
         print(request.GET)
     return HttpResponse(f"<h1>Архив2 год из 4 цифр</h1><p>{year}</p>")
+
+
+def show_category(request, cat_id):
+    return render(request, 'woman/index.html', {'menu': menu, 'posts': data_db, 'cat_selected': cat_id})
 
 
 def page_not_found(request, exception):

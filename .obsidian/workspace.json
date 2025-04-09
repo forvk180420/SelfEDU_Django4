@@ -4,43 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3e4f9364e0708761",
+        "id": "a4123da83a41cdb9",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
-            "id": "1e6e8a3ea18a891c",
+            "id": "e2c36935d5c75696",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "description/md/16. Пользовательские теги шаблонов. Декораторы simple_tag и inclusion_tag.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "16. Пользовательские теги шаблонов. Декораторы simple_tag и inclusion_tag"
-            }
-          }
-        ]
-      },
-      {
-        "id": "19295c018977ec3c",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
-          {
-            "id": "59fe1c72414f3bc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "description/md/15. Подключение статических файлов.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "15. Подключение статических файлов"
+              "title": "16. Пользовательские теги шаблонов. Декораторы simple_tag и inclusion_tag"
             }
           }
         ]
@@ -75,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "TEMPLATES",
+                "query": "views",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -190,37 +168,36 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "1e6e8a3ea18a891c",
+  "active": "e2c36935d5c75696",
   "lastOpenFiles": [
-    "description/md/attachments/Pasted image 20250407113501.png",
     "description/md/15. Подключение статических файлов.md",
     "description/md/16. Пользовательские теги шаблонов. Декораторы simple_tag и inclusion_tag.md",
+    "description/md/attachments/Pasted image 20250409123702.png",
+    "mysitedjango/woman/views.py~",
+    "mysitedjango/templates/base.html~",
+    "mysitedjango/woman/templatetags/woman_tags.py~",
+    "description/md/9. Шаблоны, начало. Функции render() и render to string().md",
+    "description/md/13. Шаблонный тег url.md",
+    "mysitedjango/woman/templates/woman/list_categories.html~",
+    "mysitedjango/woman/templates/woman/list_categories.html",
+    "description/md/attachments/Pasted image 20250408141056.png",
+    "mysitedjango/woman/urls.py~",
+    "description/md/attachments/Pasted image 20250408134606.png",
+    "description/md/10. Передача данных (переменных) в шаблоны.md",
+    "description/md/attachments/Pasted image 20250407113501.png",
     "mysitedjango/woman/templatetags/__pycache__/__init__.cpython-312.pyc",
     "mysitedjango/woman/templatetags/__pycache__/woman_tags.cpython-312.pyc",
     "mysitedjango/woman/templatetags/__pycache__",
     "mysitedjango/woman/templatetags/__init__.py",
-    "mysitedjango/woman/templatetags/woman_tags.py",
-    "mysitedjango/woman/templatetags",
-    "mysitedjango/templates/base.html~",
-    "mysitedjango/woman/templateags/woman_tags.py~",
-    "mysitedjango/woman/views.py~",
-    "mysitedjango/woman/templateags/woman_tags.py",
     "description/md/14. Наследование шаблонов (extends). Тег include.md",
     "description/md/attachments/Pasted image 20250405082220.png",
     "description/md/attachments/Pasted image 20250405081210.png",
-    "description/md/9. Шаблоны, начало. Функции render() и render to string().md",
     "description/md/11. Стандартные шаблонные фильтры.md",
     "description/md/12. Теги шаблонов. Теги if и for.md",
-    "description/md/13. Шаблонный тег url.md",
     "description/md/attachments/Pasted image 20250403114212.png",
     "mysitedjango/woman/static/woman/images/smallmenu.png",
     "mysitedjango/woman/static/woman/images/share_yt.png",
     "mysitedjango/woman/static/woman/images/logo.png",
-    "mysitedjango/woman/static/woman/images/btn_yt.png",
-    "mysitedjango/woman/static/woman/images/blockquote.png",
-    "description/md/attachments/Pasted image 20250403102702.png",
-    "description/md/attachments/Pasted image 20250402131218.png",
-    "description/md/10. Передача данных (переменных) в шаблоны.md",
     "description/md/8. Перенаправления (redirect). Функция reverse.md",
     "description/md/7. GET- и POST-запросы. Обработчики исключений запросов.md",
     "сайте.md"
